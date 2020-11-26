@@ -1,0 +1,38 @@
+.nav-bar {
+    padding: 0 1rem;
+    height: 70px;
+    background-color: rgb(36, 36, 36);
+    box-shadow: 0px 5px 20px #00000059;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    .logo {
+        height: 100%;
+        cursor: pointer;
+        img {
+            height: 40px;
+            transition: .3s;
+            &:hover {
+                filter: brightness(105%);
+            }
+            &:active {
+                transform: scale(1.1);
+            }
+        }
+    }
+    .main-nav {
+        &>* {
+            display: inline-block;
+            width: 85px;
+            transition: .1s;
+            &:hover {
+                color: $clr1;
+            }
+        }
+        &>*:not(:last-child) {
+            margin-inline-end: rem(16px);
+        }
+
+    }
+}

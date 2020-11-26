@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    color: #202020;
+    line-height: 1.5;
+    font-family: Questrial;
+}
+
+body {
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+    border: 1px solid #bbb;
+    padding: 0.5rem;
+    font-family: Questrial;
+
+}
+
+button {
+    border: 1px solid #bbb;
+    outline: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-family: Questrial;
+
+}
+
+input {
+    font-family: sans-serif;
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid #bbb;
+    font-family: Questrial;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
