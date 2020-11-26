@@ -1,0 +1,14 @@
+@mixin niceScrollBar($width, $color) {
+    &::-webkit-scrollbar {
+        width: $width;
+    }
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $color;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: darken($color, 5);
+    }
+}

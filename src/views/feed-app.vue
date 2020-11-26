@@ -1,7 +1,7 @@
 <template>
   <section class="feed-app">
-    <h1> Welcome to the FEED! </h1>
-    <post-list v-if="posts" :posts="posts" />
+    <!-- <h1> Welcome to the FEED! </h1> -->
+    <post-list v-if="posts" :posts="posts" @save-posts="savePosts" />
   </section>
 </template>
 
@@ -19,7 +19,9 @@ export default {
   methods: {
     async loadPosts() {
       this.posts = await postService.query()
-      console.log(this.posts);
+    },
+    savePosts() {
+      postService.savePostsToStorage();
     }
   },
   created() {

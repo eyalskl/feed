@@ -10,6 +10,7 @@ html {
 
 body {
     margin: 0;
+    @include niceScrollBar(0.4rem, $clr1);
 }
 
 textarea {

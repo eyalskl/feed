@@ -1,6 +1,6 @@
 <template>
-    <div class="post-list">
-        <post-preview v-for="post in posts" :post="post" :key="post._id" />
+    <div class="post-list flex column align-center">
+        <post-preview v-for="post in posts" :post="post" :key="post._id" @post-updated="savePosts" />
     </div>
 </template>
 
@@ -14,6 +14,11 @@ export default {
       type: Array,
       required: true,
     },
+  },
+  methods: {
+    savePosts() {
+      this.$emit('save-posts');
+    }
   },
   components: {
       postPreview

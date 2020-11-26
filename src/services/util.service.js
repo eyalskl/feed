@@ -1,6 +1,7 @@
 export const utilService = {
     makeId,
-    getRandomInt
+    getRandomInt,
+    getRandomPrice
 }
 
 function makeId(length = 10) {
@@ -12,9 +13,16 @@ function makeId(length = 10) {
     return text;
 }
 
-function getRandomInt(min, max) {
+function getRandomPrice(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     var randNum = Math.floor(Math.random() * (max - min) + min);
     randNum += (Math.floor(Math.random() * (99 - 1) + 1) / 100)
+    return randNum
+}
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min);
 }

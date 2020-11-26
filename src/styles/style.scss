@@ -1,16 +1,19 @@
+// SETUP
+@import './setup/functions';
+@import './setup/mixins';
+@import './setup/variables';
+@import './setup/typography';
+
 // BASICS
 @import './basics/base';
 @import './basics/helpers';
 @import './basics/layout';
 
-// SETUP
-@import './setup/functions';
-@import './setup/variables';
-@import './setup/typography';
-
 // COMPONENTS
 @import './components/app-footer';
 @import './components/nav-bar';
+@import './components/post-list';
+@import './components/post-preview';
 
 // VIEWS
 @import './views/feed-app';
